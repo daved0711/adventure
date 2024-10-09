@@ -1,0 +1,163 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+
+.homeBanner {
+  font-family: $font--tertiary;
+  h2 {
+    font-size: 3rem;
+  }
+  @include centerAll;
+  background: url(../../IMG/bgBanner.png);
+  background-color: $clr--dark;
+  background-size: cover;
+  position: relative;
+  &__wrapper {
+  }
+  &__details {
+    p {
+      font-family: $font--tertiary;
+      width: 60rem;
+      color: $clr--light;
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+    img {
+      width: 10rem;
+      position: absolute;
+      right: -1.5rem;
+      top: 20rem;
+    }
+  }
+}
+.fourman {
+  background: url(../../IMG/Banner.jpg);
+  background-size: cover;
+  height: 35rem;
+  position: relative;
+  &__france {
+    padding-bottom: 3rem;
+    rotate: 40deg;
+    top: -6rem;
+    right: 93rem;
+    position: absolute;
+    background-color: $clr--dark;
+    img {
+      width: 10rem;
+      // rotate: 5deg;
+    }
+    p {
+      color: $clr--light;
+      font-family: $font--tertiary;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: $clr--light;
+      font-family: $font--tertiary;
+    }
+  }
+  &__america {
+    padding-bottom: 3rem;
+    rotate: -40deg;
+    top: 25rem;
+    right: 21rem;
+    position: absolute;
+    background-color: $clr--light;
+    img {
+      width: 10rem;
+      // rotate: 5deg;
+    }
+    p {
+      color: $clr--dark;
+      font-family: $font--tertiary;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: $clr--dark;
+      font-family: $font--tertiary;
+    }
+  }
+  &__nav {
+    color: $clr--dark;
+    position: relative;
+    background-color: $clr--light;
+    border-radius: 20rem;
+    width: 3rem;
+    font-size: 2rem;
+    height: 3rem;
+    justify-content: center;
+    text-align: center;
+    top: -1.5rem;
+    left: 43rem;
+    a {
+      color: $clr--dark;
+    }
+  }
+}
+.popular {
+  &__title {
+    h2 {
+      color: $clr--dark;
+      text-align: center;
+      font-size: 4rem;
+    }
+    p {
+      color: $clr--dark;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__wrapper2nd {
+    @include unevenGrid(1fr 1fr, 1rem);
+  }
+  &__details {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    &--img {
+      img {
+        max-width: 25rem;
+        height: 15rem;
+        object-fit: cover;
+      }
+    }
+    &--files {
+      h3 {
+        color: $clr--primary;
+        font-weight: 300;
+        padding-bottom: 0.5rem;
+        &:hover {
+          color: $clr--dark;
+        }
+      }
+      h4 {
+        color: $clr--dark;
+        font-family: $font--tertiary;
+        padding-bottom: 0.5rem;
+      }
+      p {
+        color: $clr--dark;
+        padding-bottom: 0.5rem;
+        text-align: left;
+      }
+      a {
+        color: $clr--dark;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.adventure{
+  &__wrapper{
+
+  }
+  &__card{
+    img{
+      border-top-left-radius:10rem;
+      border-top-right-radius:10rem;
+      width: 15rem;
+
+    }
+  }
+}
